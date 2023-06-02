@@ -1,0 +1,117 @@
+#position{
+  position: relative; 
+  width: 1250px;
+  height: 550px;
+}
+#biggercircle{
+  margin-top: 5%;
+  /*leaves 5% blank space on top*/
+  background-color: rgb(35, 34, 34);
+  position: absolute;
+  border-radius: 50%; /*to get a circle*/
+  height: 300px;
+  width: 300px;
+  left: 37%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#high_score,#start_button,#current_score{
+  position: relative;
+  font-family: 'Orbitron';
+  background-color: lightgray;
+  border-radius: 15%;
+  font-size: 20px; /*size of the button*/
+  top: 60%;
+  cursor: pointer;
+}
+#green_circle,#red_circle,#yellow_circle,#blue_circle{
+  border-radius: 50%;
+  height: 150px;
+  width: 150px;
+  border: 10px solid black; /*width style color*/
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+#green_circle{
+  background-color: green;
+  position: absolute;
+  top: 80px;
+  left: 32%;
+}
+#red_circle{
+  background-color: red;
+  position: absolute;
+  top: 80px;
+  left: 54%;
+}
+#yellow_circle{
+  background-color: yellow;
+  position: absolute;
+  top: 300px;
+  left: 32%;
+}
+#blue_circle{
+  background-color: blue;
+  position: absolute;
+  top: 300px;
+  left: 54%;
+}
+#status_indicator{
+  position: relative;
+  height: 15px;
+  width: 15px;
+  background-color: red;
+  border-radius: 50%;
+  top: 250px;
+  left: 48%;
+}
+#turn{
+  text-align: center;
+  padding-right: 2%;
+  font-size: 35px;
+  position: relative;
+  top: 420px;
+}
+#heading{
+  text-align: center;
+  font-size: 35px;
+  padding-right: 2%;
+}
+#myRules {
+  display: none; /* Hidden by default */
+  position: fixed;
+  z-index: 10; /* Sit on top */
+  padding-top: 10px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.4); /* Black with opacity */
+}
+.rules-content {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 40%;
+}
+.close {
+  color: black;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+}
+.header{
+  border-bottom: 1px solid black;
+}
+#rule_button{
+  margin: 0;
+  position: absolute;
+  top: 100%;
+  left: 49%;
+  transform: translate(-50%, -50%);
+}

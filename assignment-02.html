@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Simon Game</title>
+    <link rel= "stylesheet" href = "assignment-02.css">
+    <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Orbitron'>
+    <!---to get the font-style 'Orbitron'-->
+  </head>
+
+  <body>
+    <div id = "position">
+      <div id = "heading">Simon Game</div>
+      <div id = "biggercircle">
+        <div id = "buttons">
+          <button id = "high_score">00</button>
+          <button id = "start_button">START</button>
+          <button id = "current_score">00</button>
+        </div>
+      </div>
+      <div id= "status_indicator"></div>  
+      <div id = "color_buttons">
+        <button id = "green_circle"></button> 
+        <button id = "red_circle"></button>
+        <button id = "yellow_circle"></button>
+        <button id = "blue_circle"></button>
+      </div>
+      <!---Rules-->
+      <button id="rule_button">Click here for Rules</button>
+      <div id="myRules" class="rules">
+       <div class="rules-content">
+         <span class="close">&times;</span>
+         <div class = "header"><h3>Rules</h3></div>
+         <p>
+          <ul>
+            <li>Click the START button to begin. The game will begin 3 seconds after the light turns green.</li>
+            <li>Simon will give the first signal (randomly flash a coloured	button). Repeat the signal by clicking
+              the	same colour button.
+            </li>
+            <li>Simon will duplicate the first signal and add one. Repeat these two signals by clicking the same
+              colour buttons, in order.
+            </li>
+            <li>Simon will duplicate these two signals and add one. Continue playing as long as you repeat each 
+              sequence of signals correctly. After the 5th, 9th and 13th signals in a sequence, Simon automatically
+              speeds up the interval between the signals.
+            </li>
+            <li>If you fail to repeat a sequence exactly or if you take more than 5 seconds to repeat a signal,
+              Simon responds by flashing all four buttons simultaneously five times. This means you have lost and the 
+              sequence of signals ends. The game status indicator will turn back to red colour and you will have to 
+              click START button again to start a new game. The all-time high score is displayed to the left of the 
+              START button.
+            </li>
+            <li>Good Luck!</li>
+          </ul>
+         </p>
+        </div>
+     </div>
+      <div id = "turn">Computer's Turn</div>
+    </div>  
+  </body>
+  <script src = "assignment-02.js"></script>
+</html>
